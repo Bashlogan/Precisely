@@ -27,7 +27,7 @@ function VideoCard({ video }) {
     <div className="card mb-3 col-md-12 col-sm-6 col-xs-12">
       <div className="row no-gutters">
         <div className="col-md-5 imgHolder">
-          <a href="" type="button" onClick={changeVideo}>
+          <a href="/" type="button" onClick={changeVideo}>
             <img
               src={video.snippet.thumbnails.high.url}
               className="card-img"
@@ -38,7 +38,7 @@ function VideoCard({ video }) {
         </div>
         <div className="col-md-7 bodyHolder">
           <div className="card-body">
-            <a href="" type="button" onClick={changeVideo}>
+            <a href="/" type="button" onClick={changeVideo}>
               <div className="card-title">
                 {video.snippet.title.slice(0, 30)}
               </div>

@@ -17,7 +17,7 @@ function VideoDetail({ video }) {
       <div className="videoDetail">
         <div className={`videoDetailIcon ${infoActive ? "active" : ""}`}>
           <a
-            href=""
+            href="/"
             type="button"
             onClick={(e) => {
               e.preventDefault();
@@ -33,7 +33,7 @@ function VideoDetail({ video }) {
         </div>
         <div className={`videoDetailIcon ${editActive ? "active" : ""}`}>
           <a
-            href=""
+            href="/"
             type="button"
             onClick={(e) => {
               e.preventDefault();
@@ -49,7 +49,7 @@ function VideoDetail({ video }) {
         </div>
         <div className={`videoDetailIcon ${bookActive ? "active" : ""}`}>
           <a
-            href=""
+            href="/"
             type="button"
             onClick={(e) => {
               e.preventDefault();
@@ -65,7 +65,7 @@ function VideoDetail({ video }) {
         </div>
         <div className={`videoDetailIcon ${chatActive ? "active" : ""}`}>
           <a
-            href=""
+            href="/"
             type="button"
             onClick={(e) => {
               e.preventDefault();
