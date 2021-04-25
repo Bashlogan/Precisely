@@ -1,0 +1,133 @@
+.videoDetail {
+  display: flex;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.videoDetailIcon {
+  border-radius: 10px;
+  color: #6646e7 !important;
+  background-color: #f1edff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.videoDetailIcon a {
+  color: #6646e7 !important;
+  display: flex;
+  align-items: center;
+}
+
+.videoDetailIcon a:hover {
+  text-decoration: none !important;
+}
+
+.active {
+  box-shadow: 0px 7px 30px 0px rgba(102, 70, 231, 0.4);
+  background-color: #6646e7;
+  color: white !important;
+}
+
+.active a {
+  color: white !important;
+}
+
+.videoBottom {
+  margin: 0.5rem;
+}
+
+.videoBottomContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.videoTags {
+  color: rgb(75, 133, 0);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.videoTags span {
+  margin: 0 1rem 0 0;
+}
+
+.videoTitle {
+  font-weight: 700;
+}
+
+/* Media Rules */
+@media only screen and (min-width: 1200px) {
+  .videoDetailIcon {
+    padding: 0.7rem;
+    margin: 1rem;
+  }
+  .active {
+    padding: 0.7rem 2rem;
+  }
+  .videoTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .videoDetailIcon {
+    padding: 0.7rem;
+    margin: 1rem;
+  }
+  .active {
+    padding: 0.7rem 1.8rem;
+  }
+  .videoTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .videoDetailIcon {
+    padding: 0.6rem;
+    margin: 0.5rem;
+  }
+  .videoDetailIcon svg {
+    font-size: 1.3rem !important;
+  }
+  .active {
+    padding: 0.6rem 1rem;
+  }
+  .active span {
+    font-size: 0.9rem !important;
+  }
+  .videoTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .videoDetailIcon {
+    padding: 0.6rem;
+    margin: 0.5rem;
+  }
+  .videoDetailIcon svg {
+    font-size: 1.3rem !important;
+  }
+  .active {
+    padding: 0.6rem 1rem;
+  }
+  .active span {
+    font-size: 0.8rem !important;
+  }
+  .videoTitle {
+    font-size: 1.1rem;
+  }
+}

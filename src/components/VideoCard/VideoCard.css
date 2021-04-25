@@ -1,0 +1,133 @@
+.videoCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 0 0 0 white !important;
+}
+
+.card-body {
+  padding: 0.5rem 0 0.5rem 0.7rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-body a {
+  color: black !important;
+}
+
+.card-body a:hover {
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-title::after {
+  content: ".....";
+}
+
+.imgHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bodyHolder {
+  display: flex;
+}
+
+.imgHolder img {
+  border-radius: 12px;
+  box-shadow: 0 0 0.5rem rgb(149, 130, 149);
+}
+
+.imgHolder hr {
+  background-color: #6646e7;
+  border: 3px solid #6646e7;
+  color: #6646e7;
+  border-radius: 3px;
+  margin: 4px !important;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating svg {
+  color: #febe16;
+  font-size: 1.3rem !important;
+}
+
+.card-text {
+  color: black !important;
+}
+
+/* Media Rules */
+@media only screen and (min-width: 1200px) {
+  .card-title {
+    margin-bottom: 0.25rem !important;
+    font-size: 1.2rem;
+    line-height: 1.3rem !important;
+  }
+  .eye svg {
+    margin-left: 1rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .card-title {
+    margin-bottom: 0.25rem !important;
+    font-size: 0.9rem;
+    line-height: 1.3rem !important;
+  }
+  .eye svg {
+    margin-left: 0.8rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-title {
+    margin-bottom: 0.1rem !important;
+    font-size: 0.9rem;
+    line-height: 1.2rem !important;
+  }
+  .eye svg {
+    margin-left: 0.6rem !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-title {
+    margin-bottom: 0.25rem !important;
+    font-size: 1.5rem;
+    line-height: 1.3rem !important;
+  }
+  .eye svg {
+    margin-left: 1.5rem !important;
+  }
+}
+
+.cardFooter {
+  display: flex;
+}
+
+.eye svg {
+  font-size: 1.1rem !important;
+}
+
+.eye {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem !important;
+}
+
+.options svg {
+  color: black !important;
+  font-size: 1.3rem !important;
+  margin-top: 8px;
+}

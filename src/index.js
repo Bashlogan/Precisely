@@ -1,14 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { videoReducer, videoState } from "./VideoReducer";
+import { VideoProvider } from "./VideoProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <VideoProvider videoState={videoState} videoReducer={videoReducer}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </VideoProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
